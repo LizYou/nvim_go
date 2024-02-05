@@ -93,6 +93,11 @@ nvim_lsp.lua_ls.setup {
   end
 }
 
+nvim_lsp.gopls.setup {
+	on_attach = on_attach,
+	cmd = { "/usr/bin/gopls" }
+}
+
 --local lua_ls_root_path = os.getenv("HOME") .. "/lua-language-server"
 --local lua_ls_binary = lua_ls_root_path .. "/bin/lua-language-server"
 
